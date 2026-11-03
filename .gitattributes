@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+*.md      text
+*.txt     text
+*.cpp     text
+*.hpp     text
+*.json    text
+*.mjs     text
+*.ps1     text
+*.cmake   text
+
+docs/dumps/strings-*.txt  -text -diff -merge linguist-generated=true
+docs/dumps/report-*.md    -diff linguist-generated=true
+docs/dumps/frontend/**    -text -diff -merge linguist-vendored=true
+
+*.exe  binary
+*.dll  binary
+*.png  binary
+*.ttf  binary
+*.zip  binary
+*.gz   binary

@@ -1,0 +1,11 @@
+build/
+.dev-state/
+*.exe
+*.obj
+*.pdb
+
+# dumps: raw copies stay out of history, compressed copies are fine to commit
+docs/dumps/strings-*.txt
+docs/dumps/report-*.md
+docs/dumps/frontend/*
+!docs/dumps/frontend/*.gz
