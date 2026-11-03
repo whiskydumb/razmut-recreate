@@ -19,3 +19,8 @@ docs/dumps/frontend/**    -text -diff -merge linguist-vendored=true
 *.ttf  binary
 *.zip  binary
 *.gz   binary
+
+*.txt.gz   -text diff=gunzip linguist-generated=true
+*.js.gz    -text diff=gunzip linguist-vendored=true
+*.css.gz   -text diff=gunzip linguist-vendored=true
+*.html.gz  -text diff=gunzip linguist-vendored=true
